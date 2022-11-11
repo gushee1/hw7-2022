@@ -10,7 +10,7 @@ window.addEventListener("load", function() {
 const playButton = document.getElementById("play");
 playButton.addEventListener("click", function() {
 	vid.play();
-	document.getElementById("volume").innerHTML = document.getElementById("slider").value;
+	document.getElementById("volume").innerHTML = document.getElementById("slider").value + "%";
 });
 
 const pauseButton = document.getElementById("pause");
@@ -46,7 +46,7 @@ muteButton.addEventListener("click", function() {
 const volSlider = document.getElementById("slider")
 volSlider.addEventListener("click", function() {
 	vid.volume = volSlider.value / 100;
-	document.getElementById("volume").innerHTML = volSlider.value;
+	document.getElementById("volume").innerHTML = volSlider.value + "%";
 })
 
 const oldStyleButton = document.getElementById("vintage")
